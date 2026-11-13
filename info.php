@@ -1,0 +1,3 @@
+<?php
+echo "DATAWAREHOUSE SYSTEM WORKING";
+?>

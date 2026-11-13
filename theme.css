@@ -1,0 +1,237 @@
+/* ========================================================
+   GLOBAL DARK MODE - CLEAN MATTE SAAS UI (EXTIO STYLE)
+   ======================================================== */
+
+/* 1. Deep Matte Navy Background (No gradients, no blur) */
+html.dark-mode body,
+html.dark-mode .main-wrapper {
+    background: #0D121F !important; /* Deepest matte navy */
+    color: #F8FAFC !important;
+}
+
+/* 2. Solid Surface Cards */
+html.dark-mode .sidebar,
+html.dark-mode .profile-box,
+html.dark-mode .stat-card,
+html.dark-mode .calendar-wrapper,
+html.dark-mode .calendar-container,
+html.dark-mode .server-card,
+html.dark-mode .settings-container,
+html.dark-mode .inner-sidebar,
+html.dark-mode .profile-card,
+html.dark-mode .account-container,
+html.dark-mode .history-container {
+    background: #171F32 !important; /* Raised matte surface */
+    backdrop-filter: none !important; /* Completely removed blur */
+    border: 1px solid #252F44 !important; /* Crisp, flat border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; /* Soft, realistic shadow */
+}
+
+/* 3. Typography - Crisp and Flat */
+html.dark-mode .welcome-text,
+html.dark-mode .card-title,
+html.dark-mode .profile-name-left,
+html.dark-mode .stat-value,
+html.dark-mode .server-title,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode #dynamic-report-title,
+html.dark-mode .sys-name,
+html.dark-mode .folder-info h4 {
+    color: #FFFFFF !important;
+    text-shadow: none !important; /* Removed text glow */
+}
+
+/* Secondary muted text */
+html.dark-mode .welcome-sub,
+html.dark-mode .sidebar a,
+html.dark-mode .sidebar .signout,
+html.dark-mode .stat-label,
+html.dark-mode .setting-info p,
+html.dark-mode .input-hint,
+html.dark-mode .calendar-header,
+html.dark-mode .table-header,
+html.dark-mode .sidebar-label,
+html.dark-mode .sys-batch,
+html.dark-mode .folder-info p {
+    color: #94A3B8 !important; /* Soft slate gray */
+}
+
+/* 4. Sidebar - Solid Blue Pill Active State */
+html.dark-mode .sidebar a:hover {
+    background: #1E293B !important;
+    color: #E2E8F0 !important;
+}
+
+html.dark-mode .sidebar a.active {
+    background: #2563EB !important; /* Solid vibrant cobalt blue */
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 12px !important; /* Fully rounded pill shape */
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+}
+
+html.dark-mode .sidebar a.active i {
+    color: #FFFFFF !important;
+    text-shadow: none !important; /* Removed icon glow */
+}
+
+/* ========================================================
+   5. HISTORY PAGE ELEMENTS
+   ======================================================== */
+/* Top Folder Cards */
+html.dark-mode .folder-card {
+    background: #1C263C !important;
+    border: 1px solid #252F44 !important;
+}
+html.dark-mode .folder-card:hover {
+    background: #232F4A !important;
+}
+html.dark-mode .folder-card.active {
+    border: 1px solid #2563EB !important;
+    background: rgba(37, 99, 235, 0.1) !important;
+}
+
+/* History Data Rows */
+html.dark-mode .smart-list-row {
+    background: #1C263C !important;
+    border: 1px solid #252F44 !important;
+}
+html.dark-mode .smart-list-row:hover {
+    background: #232F4A !important;
+    border-color: #3B82F6 !important;
+}
+html.dark-mode .date-group-header {
+    border-bottom: 2px solid #252F44 !important;
+    color: #94A3B8 !important;
+}
+
+/* ========================================================
+   6. DROPDOWNS, INPUTS & FILTERS
+   ======================================================== */
+/* Inputs and filter buttons blend into the deep background */
+html.dark-mode .choices__inner,
+html.dark-mode .search-input,
+html.dark-mode .image-filter-btn {
+    background: #0D121F !important;
+    border: 1px solid #252F44 !important;
+    color: #F8FAFC !important;
+}
+
+html.dark-mode .choices__inner .choices__item {
+    color: #F8FAFC !important;
+}
+
+/* Popover Cards */
+html.dark-mode .choices__list--dropdown,
+html.dark-mode .image-filter-card,
+html.dark-mode .custom-filter-dropdown,
+html.dark-mode .dropdown-menu {
+    background: #171F32 !important;
+    border: 1px solid #252F44 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Filter Dropdown Text */
+html.dark-mode .choices__list--dropdown .choices__item,
+html.dark-mode .dropdown-option,
+html.dark-mode .dropdown-menu a {
+    color: #94A3B8 !important;
+}
+
+/* Filter Dropdown Hover - Solid Blue */
+html.dark-mode .choices__list--dropdown .choices__item--selectable.is-highlighted,
+html.dark-mode .dropdown-option:hover,
+html.dark-mode .dropdown-menu a:hover {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+/* Filter Grid Squares */
+html.dark-mode .grid-square {
+    background: #0D121F !important;
+    border: 1px solid transparent !important;
+}
+html.dark-mode .grid-square.active-blue {
+    background: rgba(37, 99, 235, 0.15) !important;
+    border-color: #2563EB !important;
+}
+html.dark-mode .grid-square.active-blue .label,
+html.dark-mode .grid-square.active-blue i {
+    color: #60A5FA !important;
+}
+
+/* ========================================================
+   7. PROFILE & SETTINGS PAGE (INPUTS & BUTTONS FIX)
+   ======================================================== */
+
+/* Fix Input Fields (Fill Boxes) - Blend into the dark background */
+html.dark-mode input[type="text"],
+html.dark-mode input[type="email"],
+html.dark-mode input[type="password"],
+html.dark-mode .form-control {
+    background-color: #0D121F !important; /* Deep matte navy */
+    border: 1px solid #252F44 !important; /* Crisp flat border */
+    color: #F8FAFC !important; /* Crisp white text */
+}
+
+/* Input Focus State - Glows blue when clicking inside */
+html.dark-mode input[type="text"]:focus,
+html.dark-mode input[type="email"]:focus,
+html.dark-mode input[type="password"]:focus,
+html.dark-mode .form-control:focus {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+    outline: none !important;
+}
+
+/* Disabled/Readonly Inputs (e.g., Staff ID) */
+html.dark-mode input:disabled,
+html.dark-mode input[readonly],
+html.dark-mode .form-control:disabled,
+html.dark-mode .form-control[readonly] {
+    background-color: #171F32 !important; /* Slightly lighter surface to look 'locked' */
+    color: #94A3B8 !important; /* Muted gray text */
+    border-color: #252F44 !important;
+    cursor: not-allowed;
+}
+
+/* Form Labels (Full Name, Email Address, etc.) */
+html.dark-mode label,
+html.dark-mode .form-label {
+    color: #94A3B8 !important;
+    font-weight: 500 !important;
+}
+
+/* Fix stark white secondary buttons (Remove, Edit Email, Cancel, Change Password) */
+html.dark-mode button:not(.btn-primary):not(.btn-danger):not(.btn-download):not(.sidebar a):not(.nav-link),
+html.dark-mode .btn-light,
+html.dark-mode .btn-outline-secondary,
+html.dark-mode .btn-white {
+    background-color: #1C263C !important; /* Dark surface button */
+    color: #E2E8F0 !important; /* Light text */
+    border: 1px solid #252F44 !important;
+    transition: 0.2s ease;
+}
+
+/* Hover state for secondary buttons */
+html.dark-mode button:not(.btn-primary):not(.btn-danger):not(.btn-download):not(.sidebar a):hover,
+html.dark-mode .btn-light:hover,
+html.dark-mode .btn-outline-secondary:hover {
+    background-color: #232F4A !important;
+    border-color: #3B82F6 !important; /* Blue border on hover */
+    color: #FFFFFF !important;
+}
+
+/* Ensure Primary buttons (Save Changes, Upload Image) stay the vibrant SaaS blue */
+html.dark-mode .btn-primary {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+}
+
+html.dark-mode .btn-primary:hover {
+    background-color: #1D4ED8 !important;
+}
+
